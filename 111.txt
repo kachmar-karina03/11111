@@ -7,21 +7,29 @@ int main()
    	{
     	setlocale(LC_ALL,"ru");
     	setlocale(0, "");
-    	int a, b, d, c;
+
+    	int a, b, d, c, i;
     	cout << "a ";cin >> a; 
-   	 cout << "b ";cin >> b;
-    	cout << "Дія - 1-додавання 2-віднімання 3-множення 4-ділення";cin >> d;
-    	if (d = 1) int c = a + b;
-    	if (d = 2) int c = a - b;
-    	if (d = 3) int c = a * b;
-    	if (d = 4) int c = a / b;
-    	cout << остаточне значення = " << c << endl; 
-    	cout<<"restart - 1"<<endl;
-    	cin>>i;
+   	    cout << "b ";cin >> b;
+    	//cout << "Дія - 1-додавання 2-віднімання 3-множення 4-ділення";cin >> d;
+    	
+    	if (b=='+')
+        	cout <<  c= " << a+b << endl;
+    	if (b=='-')
+        	cout <<  c= " << a-b << endl;    
+        
+    	if (b=='*')
+        	cout <<  c= " << a*b << endl;
+        
+    	if (b=='/')
+        	cout <<  c= " << a/b << endl;
+        
+    	//cout << остаточне значення = " << c << endl; 
+    	cout<<"restart - 1"<<endl;cin>>i;
 
-    	}while(i==1);
+    }while(i==1);
 
-    	system("pause");
-    	return 0;
+    system("pause");
+    return 0;
 
 }
